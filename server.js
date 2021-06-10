@@ -19,7 +19,7 @@ app.use('/house/', api);
 
 
 // на все остальные запросы 
-// app.get('/', (req, res) => res.sendFile(indexHTML));
+app.get('/', (req, res) => res.sendFile(indexHTML));
 // app.get("/", (req, res) => {
 //     res.sendFile(path.join(__dirname, "build", "index.html"));
 //   });
