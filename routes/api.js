@@ -8,7 +8,7 @@ const houses = require('../src/node_modules/data/houses')
 
 
 // GET http://localhost:3000/api/some
-router.get('/', async(req, res) => {
+router.get('/listing', async(req, res) => {
  
    const arr = [
       { houses,
