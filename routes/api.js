@@ -19,10 +19,21 @@ router.get('/listing', async(req, res) => {
 
 });
 // req.params.id
+router.get('/categories' , async(req,res) => {
+    
+    const id = await houses.map(el => el.product)
+    console.log(id)
+//     res.end(`
+//     <h1>Ваше сообщение: ${id}</h1>
+// `)
+    res.send(id)
+   
+})
+
 router.get('/:id' , async(req,res) => {
     
     const id = await R.find(R.propEq('id', Number(req.params.id)), houses)
-    console.log(id)
+    // console.log(id)
  
     res.send(id)
    

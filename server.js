@@ -16,6 +16,7 @@ app.use('/', express.static('public'));
 // запросы к api выносите в отдельный файл и подключаете как миделвер
 app.use('/api', api);
 app.use('/listing/house', api);
+app.use('/listing', api);
 
 
 // на все остальные запросы 
